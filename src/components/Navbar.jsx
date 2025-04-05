@@ -1,18 +1,33 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
-  return (
-    <nav className="bg-black text-white p-4 fixed top-0 w-full flex justify-between items-center shadow-lg z-50">
-      {/* Logo */}
+  // Handle scroll effect
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
 
-      <Link to="/"><img  className="tracking-wide w-30" src="/logo-yacine.svg" alt="Yacine AutoX logo" /></Link>
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      scrolled ? "bg-black/80 backdrop-blur shadow-md" : "bg-black"
+    } text-white p-4 flex justify-between items-center`}>
+      
+      {/* Logo */}
+      <Link to="/">
+        <img className="tracking-wide w-20 lg:w-30" src="/logo-yacine.svg" alt="Yacine AutoX logo" />
+      </Link>
 
       {/* Desktop Links */}
       <div className="hidden md:flex space-x-6">

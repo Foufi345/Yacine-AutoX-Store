@@ -1,12 +1,35 @@
-# React + Vite
+# 🚗 Yacine AutoX - Premium Vehicle Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**A high-performance React e-commerce platform for luxury and specialty vehicles, built with Vite.**
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚡ **Blazing Fast Performance** - Vite-powered React with SWC optimization
+- 🎨 **Modern UI/UX** - Tailwind CSS & Framer Motion animations
+- 🔐 **Secure Auth** - JWT authentication with refresh tokens
+- 📱 **Mobile-First** - Fully responsive design
+- 🚀 **CI/CD Ready** - GitHub Actions integration
+- 📊 **Analytics Dashboard** - Sales and inventory insights
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React 18 + Vite
+- **Styling**: Tailwind CSS + CSS Modules
+- **State Management**: Redux Toolkit
+- **Routing**: React Router v6
+- **Form Handling**: React Hook Form + Yup
+- **API**: Axios with interceptors
+- **Testing**: Jest + React Testing Library
+- **Linting**: ESLint + Prettier
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js ≥18.x
+- npm ≥9.x or yarn
+
+### Installation
+```bash
+git clone https://github.com/Foufi345/yacine-autox.git
+cd yacine-autox
+npm install

@@ -10,7 +10,7 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000);
+    }, 2500);
     return () => clearInterval(interval);
   }, [images.length]);
 

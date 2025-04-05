@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div className="bg-gray-900 text-white min-h-screen">
+    <div className="bg-gray-100 text-white min-h-screen">
       <Navbar />
       <div className="">
         <Routes>
